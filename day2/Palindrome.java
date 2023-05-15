@@ -1,19 +1,17 @@
-package week1.day2;
+package week3.day2;
 
 public class Palindrome {
 public static void main(String[] args) {
-	int r,sum=0,temp;
-int num =34343;
-	temp=num;
-	while (num>0) {
-		 r=num%10;  
-		   sum=(sum*10)+r;    
-		   num=num/10; 
+	String str1="Madam";
+	String rev="";
+	for (int i = str1.length()-1; i >=0 ; i--) {
+		rev=rev+str1.charAt(i);
 	}
-	if (temp==sum) {
-		System.out.println("Palindrome number");
-	} else {
-		System.out.println("Not a Palindrome number");
+	if (str1.equalsIgnoreCase(rev)) {
+		System.out.println("Palindrome");
+	}
+	else {
+		System.out.println("Not a Palindrome");
 	}
 }
 }
